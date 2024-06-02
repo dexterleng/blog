@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Dexter Leng</title>
+    <link>http://localhost:1313/posts/</link>
+    <description>Recent content in Posts on Dexter Leng</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 02 Jun 2024 16:22:23 +0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Summer 2024</title>
+      <link>http://localhost:1313/posts/summer-2024/</link>
+      <pubDate>Sun, 02 Jun 2024 16:22:23 +0700</pubDate>
+      <guid>http://localhost:1313/posts/summer-2024/</guid>
+      <description>Writing this from a cafe across the street from my hotel in Da Nang.&#xA;Perhaps the most hectic week of my life:&#xA;Lost my passport at the airport; found it 5 minutes before doors closed Went to Bangkok for an internship Quit the internship after realising it’s not for me Flew to Da Nang because I can’t stay on an ED visa Flying back to BKK tomorrow since I have rent and wanna stay a little longer Some good stuff did happen:</description>
+    </item>
+  </channel>
+</rss>

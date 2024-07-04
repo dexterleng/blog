@@ -4,7 +4,7 @@ date = 2024-07-04T17:19:45+07:00
 draft = false
 +++
 
-Last semester, I was taking some difficult & verbose courses - linear algebra, computer organization, discrete maths. I absolutely refused to move on until I absolutely understood everything mentioned in the lecture. The result? I was stuck on chapter 2 for linear algebra until the finals, and ended up with a 2.6/5 GPA that semester. Funny story - I went to the exam and wrote only C for all my MCQs, left my written portion empty, and walked out an hour early with a B grade somehow. God knows why I didn't fail.
+Last semester, I was taking some difficult & verbose courses - linear algebra, computer organization, discrete maths. I refused to move on until I absolutely understood everything mentioned in the lecture. The result? I was stuck on chapter 2 for linear algebra until the finals, and ended up with a 2.6/5 GPA that semester. Funny story - I went to the exam and wrote only C for all my MCQs, left my written portion empty, and walked out an hour early with a B grade somehow. God knows why I didn't fail.
 
 My thought process was - Surely I'm missing something. I'm probably just one reading away, maybe if I rewatch this lecture I'll get it for sure... it'll click any time now, right? Well, sometimes it never does.
 

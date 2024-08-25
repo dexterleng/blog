@@ -1,7 +1,7 @@
 +++
 title = 'Summer 2024'
 date = 2024-06-02T16:22:23+07:00
-draft = false
+draft = true
 +++
 
 Writing this from a cafe across the street from my hotel in Da Nang.

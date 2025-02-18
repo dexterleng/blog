@@ -12,7 +12,7 @@ I'm currently working on [ProNotes](https://pronotes.app). It's a macOS extensio
 
 Over the years I discovered I love building things that *shouldn't* be possible - at least not at first glance. It's why I made the apps I made.
 
-Outside of work, I play guitar & gym.
+Outside of work, I play the electric guitar.
 
 ### Projects
 

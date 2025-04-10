@@ -51,6 +51,15 @@ a {
   color: rgb(252, 184, 39);
 }
 
+/* Fixes iOS font sizing anomaly
+   Taken from: https://github.com/adityatelange/hugo-PaperMod/issues/828#issuecomment-1171994855 */
+code {
+  text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
 code {
   background-color: var(--mono-bg-color);
   padding: .1em .2em;

@@ -260,3 +260,5 @@ I don't think this is a great solution, because there are animations that you do
 ## Conclusion
 
 There you have it! I will try to write and share more as I dive deeper into the world of reverse engineering on macOS.
+
+You can find the code on [GitHub](https://github.com/dexterleng/FixAnimationsTweak).

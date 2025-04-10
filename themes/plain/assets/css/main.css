@@ -1,8 +1,26 @@
+:root {
+  --text-color: color: rgb(70, 70, 70);
+  --background-color: white;
+  --mono-bg-color: rgb(234, 234, 234);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-color: rgb(220, 220, 220);
+    --background-color: rgb(30, 30, 30);
+    --mono-bg-color: rgb(70, 70, 70);
+  }
+}
+
 html {
   max-width: 90ch;
   padding: 3em 1em;
   margin: auto;
-  font-size: 1.1em;
+  font-size: 15px;
+  font-family: system-ui,-apple-system,BlinkMacSystemFont,"Helvetica Neue","Helvetica","Arial",sans-serif;
+  line-height: 1.4;
+  color: var(--text-color);
+  background-color: var(--background-color);
 }
 
 header {
@@ -12,7 +30,7 @@ header {
 }
 
 header > h3 > a {
-  color: black;
+  color: var(--text-color);
   text-decoration: none;
 }
 
@@ -30,12 +48,13 @@ header > nav > ul > li {
 }
 
 a {
-  color: blue;
+  color: rgb(252, 184, 39);
 }
 
 code {
-  background-color: #f1f1f1;
+  background-color: var(--mono-bg-color);
   padding: .1em .2em;
+  border-radius: 0.3em;
 }
 
 pre code {

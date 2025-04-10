@@ -1,9 +1,12 @@
-{{- with resources.Get "css/main.css" }}
-  {{- if eq hugo.Environment "development" }}
-    <link rel="stylesheet" href="{{ .RelPermalink }}">
-  {{- else }}
-    {{- with . | minify | fingerprint }}
-      <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
-    {{- end }}
-  {{- end }}
+{{- $preflight := resources.Get "css/preflight.css" }}
+{{- $main := resources.Get "css/main.css" }}
+
+{{- if eq hugo.Environment "development" }}
+  <!-- <link rel="stylesheet" href="{{ $preflight.RelPermalink }}"> -->
+  <link rel="stylesheet" href="{{ $main.RelPermalink }}">
+{{- else }}
+  {{- $preflight = $preflight | minify | fingerprint }}
+  {{- $main = $main | minify | fingerprint }}
+  <!-- <link rel="stylesheet" href="{{ $preflight.RelPermalink }}" integrity="{{ $preflight.Data.Integrity }}" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="{{ $main.RelPermalink }}" integrity="{{ $main.Data.Integrity }}" crossorigin="anonymous">
 {{- end }}

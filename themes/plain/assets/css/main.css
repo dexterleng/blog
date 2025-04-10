@@ -1,5 +1,5 @@
 html {
-  max-width: 70ch;
+  max-width: 90ch;
   padding: 3em 1em;
   margin: auto;
   font-size: 1.1em;
@@ -29,6 +29,29 @@ header > nav > ul > li {
   display: inline-block;
 }
 
-a { 
+a {
   color: blue;
+}
+
+code {
+  background-color: #f1f1f1;
+  padding: .1em .2em;
+}
+
+pre code {
+  background-color: transparent;
+  color: inherit;
+  font-size: 100%;
+  padding: 0;
+}
+
+pre {
+  overflow-x: auto;
+  padding: 1em;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }

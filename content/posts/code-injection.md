@@ -1,7 +1,6 @@
 +++
 title = 'Introduction to Code Injection on macOS'
 date = 2025-04-10T13:57:38+08:00
-draft = true
 +++
 
 While most animations in macOS are delightful, some are slow and/or disorientating. In my day-to-day, I find the `NSPopover` animation to annoy me the most. While you could enable `Accessibility -> Reduce Motion` in System Settings, it doesn't always work for all UI interactions, and instead of completely disabling animations, it replaces them with fades.

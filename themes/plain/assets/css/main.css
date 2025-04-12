@@ -1,5 +1,6 @@
 :root {
-  --text-color: color: rgb(70, 70, 70);
+  --text-color: rgb(69, 69, 69);
+  --accent-color: rgb(255, 198, 0);
   --background-color: white;
   --mono-bg-color: rgb(234, 234, 234);
   --table-border-color: rgb(204, 204, 204);
@@ -108,7 +109,7 @@ header > nav > ul > li {
 }
 
 a {
-  color: rgb(252, 184, 39);
+  color: var(--accent-color);
   text-decoration: underline;
 }
 
@@ -122,21 +123,27 @@ code {
 }
 
 code {
+  font-family: SF Mono, SFMono-Regular, ui-monospace, Menlo, monospace;
   background-color: var(--mono-bg-color);
   padding: .1em .2em;
   border-radius: 0.3em;
 }
 
+/* code blocks */
 pre code {
   background-color: transparent;
   color: inherit;
-  font-size: 100%;
+  font-size: 14px;
   padding: 0;
 }
 
 pre {
+  background-color: var(--mono-bg-color);
   overflow-x: auto;
   padding: 1em;
+  border-radius: 0.3em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
 }
 
 img, video {

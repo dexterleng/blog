@@ -7,6 +7,19 @@ date = 2025-04-10T13:57:38+08:00
 ### Subheading
 #### subsubheading
 
+hi `hitest`
+
+```
+import Settings
+
+class AppDelegate: NSObject, NSApplicationDelegate {
+    static var main: AppDelegate!
+    static let logger = Logger(subsystem: Bundle.main.bundleIdentifier!, category: String(describing: AppDelegate.self))
+    
+    private var settingsWindowController: SettingsWindowController?
+}
+```
+
 > quote
 >
 > another one

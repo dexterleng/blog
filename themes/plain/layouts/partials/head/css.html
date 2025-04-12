@@ -1,5 +1,6 @@
 {{- $preflight := resources.Get "css/preflight.css" }}
 {{- $main := resources.Get "css/main.css" }}
+{{- $syntax := resources.Get "css/syntax.css" }}
 
 {{- if eq hugo.Environment "development" }}
   <link rel="stylesheet" href="{{ $preflight.RelPermalink }}">

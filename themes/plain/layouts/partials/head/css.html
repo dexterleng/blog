@@ -2,7 +2,7 @@
 {{- $main := resources.Get "css/main.css" }}
 
 {{- if eq hugo.Environment "development" }}
-  <!-- <link rel="stylesheet" href="{{ $preflight.RelPermalink }}"> -->
+  <link rel="stylesheet" href="{{ $preflight.RelPermalink }}">
   <link rel="stylesheet" href="{{ $main.RelPermalink }}">
 {{- else }}
   {{- $preflight = $preflight | minify | fingerprint }}

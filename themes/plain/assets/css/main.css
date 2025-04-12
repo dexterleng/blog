@@ -2,6 +2,8 @@
   --text-color: color: rgb(70, 70, 70);
   --background-color: white;
   --mono-bg-color: rgb(234, 234, 234);
+  --table-border-color: rgb(204, 204, 204);
+  --blockquote-bg-color: rgb(189, 189, 189);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -9,11 +11,13 @@
     --text-color: rgb(220, 220, 220);
     --background-color: rgb(30, 30, 30);
     --mono-bg-color: rgb(70, 70, 70);
+    --table-border-color: rgb(102, 102, 102);
+    --blockquote-bg-color: rgb(86, 86, 86);
   }
 }
 
-html {
-  max-width: 90ch;
+body {
+  max-width: 800px;
   padding: 3em 1em;
   margin: auto;
   font-size: 15px;
@@ -21,6 +25,62 @@ html {
   line-height: 1.4;
   color: var(--text-color);
   background-color: var(--background-color);
+  overflow-wrap: break-word;
+}
+
+h1 {
+  font-size: 1.75em;
+  font-weight: 700;
+  display: block;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+h2 {
+  font-size: 1.25em;
+  font-weight: 600;
+  display: block;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+h3 {
+  font-size: 1.1em;
+  font-weight: 500;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+h4 {
+  font-size: 1em;
+  font-weight: bold;
+  display: block;
+  margin-block-start: 1.33em;
+  margin-block-end: 1.33em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+p {
+  font-size: 1em;
+  font-weight: normal;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+li > p {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
 }
 
 header {
@@ -49,6 +109,7 @@ header > nav > ul > li {
 
 a {
   color: rgb(252, 184, 39);
+  text-decoration: underline;
 }
 
 /* Fixes iOS font sizing anomaly
@@ -82,4 +143,61 @@ img, video {
   max-width: 100%;
   height: auto;
   display: block;
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  padding-inline-start: 30px;
+}
+
+ol {
+  display: block;
+  list-style-type: decimal;
+  padding-inline-start: 30px;
+}
+
+li {
+  display: list-item;
+  text-align: match-parent;
+}
+
+table {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  border-collapse: collapse;
+  text-align: left;
+  margin-bottom: 0.5rem;
+  table-layout: auto;
+}
+
+table :is(th, td) {
+  font-weight: inherit;
+  border: 1px solid var(--table-border-color);
+  padding: 5px;
+  width: 200px; /* Suggest column width, but allow shrinking */
+}
+
+blockquote {
+  position: relative;
+  padding-left: 0.8rem; /* space between line and text */
+}
+
+blockquote::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 4px; /* thickness of the vertical line */
+  background-color: var(--blockquote-bg-color);
+  border-radius: 999px; /* this creates the rounded effect */
+  margin: 2px 0px; /* shrink it vertically a lil */
+}
+
+blockquote > p {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
 }

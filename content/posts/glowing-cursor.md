@@ -28,7 +28,7 @@ _ = indicator.perform(Selector(("dictationStateDidChange:")), with: notification
 ## Set up
 To understand how Dictation triggers this effect on the text cursor, let's create a SwiftUI project with a `NSTextView`. You could use `TextField` or `TextEditor` but you will need to do some SwiftUI-foo to get the backing `NSTextView/NSTextField`.
 
-## BetterTextField.swift
+### BetterTextField.swift
 This simply wraps a `NSScrollView` and `NSTextView` in a SwiftUI component, and passes the `NSTextView` to a `configure` method from the parent.
 
 ```
@@ -101,7 +101,7 @@ struct BetterTextView: NSViewRepresentable {
 }
 ```
 
-## ContentView.swift
+### ContentView.swift
 
 ```
 import SwiftUI
@@ -232,7 +232,7 @@ Looking at the assembly for `-[NSTextInsertionIndicator updateSubstate]:` reveal
 1. Manually call the subroutines that `updateSubstate` calls to set the effect
 2. Call the parent method `-[NSTextInsertionIndicator dictationStateDidChange:]`
 
-While (1) is going to be more powerful and gives us control over how exactly we want the glow effect to look, it is also going to take more time compared to (1), which seems like a very simple API. 
+While (1) is going to be more powerful and gives us control over how exactly we want the glow effect to look, it is also going to take more time compared to (2), which seems like a very simple API.
 
 Let's set a breakpoint for `-[NSTextInsertionIndicator dictationStateDidChange:]` and run `po $x2`, you should see `NSConcreteNotification 0x600003421980 {name = _NSTextInputContextDictationDidStartNotification}` and `NSConcreteNotification 0x60000345d400 {name = _NSTextInputContextDictationDidEndNotification}` being passed when Dictation is activated and deactivated respectively.
 

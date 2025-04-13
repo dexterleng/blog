@@ -8,7 +8,6 @@ While most animations in macOS are delightful, some are slow and/or disorientati
 {{< rawhtml >}}
 <video controls>
   <source src="/code-injection/NSPopover-before.mp4" type="video/mp4">
-  Your browser does not support the video tag.  
 </video>
 {{< /rawhtml >}}
 

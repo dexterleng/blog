@@ -1,5 +1,5 @@
 +++
-title = 'To persist is to fail'
+title = 'Just give up'
 date = 2024-07-04T17:19:45+07:00
 +++
 
